@@ -1,5 +1,6 @@
 package classes;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -8,8 +9,8 @@ import java.util.List;
 public class Items {
 
     private List<String> tags;
-    private Player player;
-    private Status status;
+    private HashMap<String, String> player;
+    private HashMap<String, String> status;
     private String ratingCount;
     private String uploader;
     private AccessControl accessControl;
@@ -17,16 +18,17 @@ public class Items {
     private String uploaded;
     private String commentCount;
     private String id;
-    private Content content;
+    private HashMap<String, String> content;
     private String category;
     private String title;
     private String duration;
-    private Thumbnail thumbnail;
     private String favoriteCount;
     private String updated;
     private String description;
     private String rating;
     private String viewCount;
+    private HashMap<String, String> thumbnail;
+
 
     public List<String> getTags() {
         return tags;
@@ -34,22 +36,6 @@ public class Items {
 
     public void setTags(List<String> tags) {
         this.tags = tags;
-    }
-
-    public Player getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(Player player) {
-        this.player = player;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
     }
 
     public String getRatingCount() {
@@ -108,14 +94,6 @@ public class Items {
         this.id = id;
     }
 
-    public Content getContent() {
-        return content;
-    }
-
-    public void setContent(Content content) {
-        this.content = content;
-    }
-
     public String getCategory() {
         return category;
     }
@@ -138,14 +116,6 @@ public class Items {
 
     public void setDuration(String duration) {
         this.duration = duration;
-    }
-
-    public Thumbnail getThumbnail() {
-        return thumbnail;
-    }
-
-    public void setThumbnail(Thumbnail thumbnail) {
-        this.thumbnail = thumbnail;
     }
 
     public String getFavoriteCount() {
@@ -188,6 +158,38 @@ public class Items {
         this.viewCount = viewCount;
     }
 
+    public HashMap<String, String> getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(HashMap<String, String> thumbnail) {
+        this.thumbnail = thumbnail;
+    }
+
+    public HashMap<String, String> getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(HashMap<String, String> player) {
+        this.player = player;
+    }
+
+    public HashMap<String, String> getContent() {
+        return content;
+    }
+
+    public void setContent(HashMap<String, String> content) {
+        this.content = content;
+    }
+
+    public HashMap<String, String> getStatus() {
+        return status;
+    }
+
+    public void setStatus(HashMap<String, String> status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Items{" +
@@ -205,12 +207,12 @@ public class Items {
                 ", category='" + category + '\'' +
                 ", title='" + title + '\'' +
                 ", duration='" + duration + '\'' +
-                ", thumbnail=" + thumbnail +
                 ", favoriteCount='" + favoriteCount + '\'' +
                 ", updated='" + updated + '\'' +
                 ", description='" + description + '\'' +
                 ", rating='" + rating + '\'' +
                 ", viewCount='" + viewCount + '\'' +
+                ", thumbnail=" + thumbnail +
                 '}';
     }
 }
