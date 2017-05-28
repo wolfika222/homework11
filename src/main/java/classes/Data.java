@@ -7,19 +7,12 @@ import java.util.List;
  */
 public class Data {
 
-    private String startIndex;
+    private int startIndex;
     private List<Items> items;
     private String updated;
-    private String totalItems;
-    private String itemsPerPage;
+    private int totalItems;
+    private int itemsPerPage;
 
-    public String getStartIndex() {
-        return startIndex;
-    }
-
-    public void setStartIndex(String startIndex) {
-        this.startIndex = startIndex;
-    }
 
     public List<Items> getItems() {
         return items;
@@ -37,30 +30,38 @@ public class Data {
         this.updated = updated;
     }
 
-    public String getTotalItems() {
+    public int getStartIndex() {
+        return startIndex;
+    }
+
+    public void setStartIndex(int startIndex) {
+        this.startIndex = startIndex;
+    }
+
+    public int getTotalItems() {
         return totalItems;
     }
 
-    public void setTotalItems(String totalItems) {
+    public void setTotalItems(int totalItems) {
         this.totalItems = totalItems;
     }
 
-    public String getItemsPerPage() {
+    public int getItemsPerPage() {
         return itemsPerPage;
     }
 
-    public void setItemsPerPage(String itemsPerPage) {
+    public void setItemsPerPage(int itemsPerPage) {
         this.itemsPerPage = itemsPerPage;
     }
 
     @Override
     public String toString() {
         return "Data{" +
-                "startIndex='" + startIndex + '\'' +
+                "startIndex=" + startIndex +
                 ", items=" + items +
                 ", updated='" + updated + '\'' +
-                ", totalItems='" + totalItems + '\'' +
-                ", itemsPerPage='" + itemsPerPage + '\'' +
+                ", totalItems=" + totalItems +
+                ", itemsPerPage=" + itemsPerPage +
                 '}';
     }
 }

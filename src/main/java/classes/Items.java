@@ -11,22 +11,22 @@ public class Items {
     private List<String> tags;
     private HashMap<String, String> player;
     private HashMap<String, String> status;
-    private String ratingCount;
+    private int ratingCount;
     private String uploader;
     private AccessControl accessControl;
     private String aspectRatio;
     private String uploaded;
-    private String commentCount;
+    private int commentCount;
     private String id;
     private HashMap<String, String> content;
     private String category;
     private String title;
-    private String duration;
-    private String favoriteCount;
+    private int duration;
+    private int favoriteCount;
     private String updated;
     private String description;
-    private String rating;
-    private String viewCount;
+    private int rating;
+    private int viewCount;
     private HashMap<String, String> thumbnail;
 
 
@@ -36,14 +36,6 @@ public class Items {
 
     public void setTags(List<String> tags) {
         this.tags = tags;
-    }
-
-    public String getRatingCount() {
-        return ratingCount;
-    }
-
-    public void setRatingCount(String ratingCount) {
-        this.ratingCount = ratingCount;
     }
 
     public String getUploader() {
@@ -78,14 +70,6 @@ public class Items {
         this.uploaded = uploaded;
     }
 
-    public String getCommentCount() {
-        return commentCount;
-    }
-
-    public void setCommentCount(String commentCount) {
-        this.commentCount = commentCount;
-    }
-
     public String getId() {
         return id;
     }
@@ -110,22 +94,6 @@ public class Items {
         this.title = title;
     }
 
-    public String getDuration() {
-        return duration;
-    }
-
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
-
-    public String getFavoriteCount() {
-        return favoriteCount;
-    }
-
-    public void setFavoriteCount(String favoriteCount) {
-        this.favoriteCount = favoriteCount;
-    }
-
     public String getUpdated() {
         return updated;
     }
@@ -140,22 +108,6 @@ public class Items {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getRating() {
-        return rating;
-    }
-
-    public void setRating(String rating) {
-        this.rating = rating;
-    }
-
-    public String getViewCount() {
-        return viewCount;
-    }
-
-    public void setViewCount(String viewCount) {
-        this.viewCount = viewCount;
     }
 
     public HashMap<String, String> getThumbnail() {
@@ -190,28 +142,76 @@ public class Items {
         this.status = status;
     }
 
+    public int getRatingCount() {
+        return ratingCount;
+    }
+
+    public void setRatingCount(int ratingCount) {
+        this.ratingCount = ratingCount;
+    }
+
+    public int getCommentCount() {
+        return commentCount;
+    }
+
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public int getFavoriteCount() {
+        return favoriteCount;
+    }
+
+    public void setFavoriteCount(int favoriteCount) {
+        this.favoriteCount = favoriteCount;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public int getViewCount() {
+        return viewCount;
+    }
+
+    public void setViewCount(int viewCount) {
+        this.viewCount = viewCount;
+    }
+
     @Override
     public String toString() {
         return "Items{" +
                 "tags=" + tags +
                 ", player=" + player +
                 ", status=" + status +
-                ", ratingCount='" + ratingCount + '\'' +
+                ", ratingCount=" + ratingCount +
                 ", uploader='" + uploader + '\'' +
                 ", accessControl=" + accessControl +
                 ", aspectRatio='" + aspectRatio + '\'' +
                 ", uploaded='" + uploaded + '\'' +
-                ", commentCount='" + commentCount + '\'' +
+                ", commentCount=" + commentCount +
                 ", id='" + id + '\'' +
                 ", content=" + content +
                 ", category='" + category + '\'' +
                 ", title='" + title + '\'' +
-                ", duration='" + duration + '\'' +
-                ", favoriteCount='" + favoriteCount + '\'' +
+                ", duration=" + duration +
+                ", favoriteCount=" + favoriteCount +
                 ", updated='" + updated + '\'' +
                 ", description='" + description + '\'' +
-                ", rating='" + rating + '\'' +
-                ", viewCount='" + viewCount + '\'' +
+                ", rating=" + rating +
+                ", viewCount=" + viewCount +
                 ", thumbnail=" + thumbnail +
                 '}';
     }
