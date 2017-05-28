@@ -12,6 +12,7 @@ public class Main {
         Util util = new Util();
 
         util.printYoutubeJSON("C:\\Users\\Hp_Workplace\\IdeaProjects\\homework11\\src\\main\\java\\json\\youtube.json");
+        util.convertYoutubeJSONtoXML("C:\\Users\\Hp_Workplace\\IdeaProjects\\homework11\\src\\main\\java\\json\\youtube.json", "C:\\Users\\Hp_Workplace\\IdeaProjects\\homework11\\src\\main\\java\\xml\\youtube.xml");
 
     }
 }

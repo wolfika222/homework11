@@ -3,6 +3,10 @@ package classes;
 /**
  * Created by Hp_Workplace on 2017. 05. 27..
  */
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class YoutubePojo {
     private String apiVersion;
     private Data data;
