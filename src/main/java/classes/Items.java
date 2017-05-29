@@ -25,7 +25,7 @@ public class Items {
     private int favoriteCount;
     private String updated;
     private String description;
-    private int rating;
+    private double rating;
     private int viewCount;
     private HashMap<String, String> thumbnail;
 
@@ -174,20 +174,20 @@ public class Items {
         this.favoriteCount = favoriteCount;
     }
 
-    public int getRating() {
-        return rating;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
-
     public int getViewCount() {
         return viewCount;
     }
 
     public void setViewCount(int viewCount) {
         this.viewCount = viewCount;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 
     @Override
